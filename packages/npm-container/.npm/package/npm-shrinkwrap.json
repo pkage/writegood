@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "write-good": {
+      "version": "0.9.1",
+      "dependencies": {
+        "passive-voice": {
+          "version": "0.0.1"
+        },
+        "weasel-words": {
+          "version": "0.1.1"
+        },
+        "adverb-where": {
+          "version": "0.0.7"
+        },
+        "too-wordy": {
+          "version": "0.1.3"
+        },
+        "no-cliches": {
+          "version": "0.1.0"
+        }
+      }
+    }
+  }
+}

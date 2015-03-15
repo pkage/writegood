@@ -1,0 +1,48 @@
+.nopadding {
+	padding: 0px;
+}
+
+.row {
+	margin: 0px;
+}
+
+.nobottommargin {
+	margin-bottom: 0px;
+}
+
+.noborderradius {
+	border-radius: 0px;
+	border: none;
+}
+
+.fullheight {
+	height: 100%;
+}
+
+.toolbg { 
+	background-color: #ccc;
+}
+
+.bigwrapper {
+	overflow: hidden;
+}
+
+.sidebar-element {
+	margin-top: 1em;
+	text-align: center;
+	padding-bottom: 1em;
+	padding-top: 1em;
+	cursor: pointer;
+}
+
+.sidebar-selected {
+	background-color: #ddd;
+}
+
+.sidebar-element:hover {
+	background-color: #eee;
+}
+
+.clickable {
+	cursor: pointer;
+}

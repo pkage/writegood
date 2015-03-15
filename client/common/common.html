@@ -1,0 +1,60 @@
+<head>
+<title>write good</title>
+</head>
+
+
+<body>
+<nav class="navbar navbar-inverse noborderradius nobottommargin">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand clickable">write good</a>
+		</div>
+
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a class="clickable" data-toggle="modal" data-target="#aboutModal">about</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<div class="row nomargin" id="contentbox">
+	<div class="col-xs-2 toolbg fullheight nopadding">
+		{{> switcher}}
+	</div>
+	<div class="col-xs-10 fullheight nopadding">
+		{{> core}}
+	</div>
+</div>
+
+<div class="modal fade" id="aboutModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">About <i>write good</i></h4>
+      </div>
+      <div class="modal-body">
+	      <p>Write good is a linter for your writing. It can catch all sorts of grammatical errors. Keep in mind that it should not be used as a replacement to your text editor, as it will <i>not</i> care about your spelling mistakes.</p>
+	      <p>Powered by the <a href="https://github.com/btford/write-good/" target="_blank">write-good</a> npm module. Created on a lazy sunday afternoon by <a href="http://kagelabs.org/" target="_blank">Patrick Kage</a>. Find the source <a href="https://github.com/quadnix/writegood" target="_blank">here</a>.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+
+<template name="switcher">
+<div class="row">
+	<div class="col-md-12 sidebar-element {{edit}}" id="edit">
+		edit
+	</div>
+	<div class="col-md-12 sidebar-element {{review}}" id="review">
+		review
+	</div>
+</div>
+</template>

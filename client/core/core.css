@@ -1,0 +1,27 @@
+.scrollable {
+	overflow-x: auto;
+}
+
+.topmargin {
+	margin-top: 1em !important;
+}
+
+.textinput {
+	height: 100%;
+	width: 100%;
+	resize: none;
+	border: none;
+	background-color: #fff;
+}
+
+.yellowy {
+	background-color: #ffc;
+}
+
+.context {
+	background-color: rgba(255,0,0,0.5);
+}
+
+.centered {
+	text-align: center;
+}

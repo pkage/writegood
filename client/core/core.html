@@ -1,0 +1,41 @@
+<template name="core">
+<div class="bigwrapper fullheight yellowy">
+	<div class="row fullheight">
+		<div class="col-lg-3 hidden-sm hidden-xs"></div>
+		<div class="col-lg-6 fullheight topmargin">
+			<br>
+			{{> Template.dynamic template=selected}}
+		</div>
+		<div class="col-lg-3 hidden-sm hidden-xs"></div>
+	</div>
+</div>
+</template>
+
+<template name="edit">
+<textarea placeholder="paste some text here" class="textinput fullsize topmargin" autofocus></textarea>
+</template>
+
+<template name="review">
+<div class="scrollable fullheight topmargin" id="reviewcontainer">
+	{{#if hasSuggestions}}
+	{{#each suggestion}}
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			{{precontext}}
+			<span class="context">{{context}}</span>
+			{{postcontext}}
+		</div>
+		<div class="panel-body">
+			{{reason}}
+		</div>
+	</div>
+	{{/each}}
+	{{else}}
+		{{#if waitingForSuggestions}}
+		<b class="topmargin centered"> waiting for server to respond... </b>
+		{{else}}
+		<b class="topmargin centered"> nothing to show here </b>
+		{{/if}}
+	{{/if}}
+</div>
+</template>
